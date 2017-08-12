@@ -184,57 +184,5 @@
 	<script type="text/javascript" src="libraries/jquery/jquery.min.js"></script>
 	<script type="text/javascript" src="libraries/owl.carousel2/dist/owl.carousel.min.js"></script>
 	<script type="text/javascript" src="libraries/bootstrap/dist/js/bootstrap.min.js"></script>
-	<script type="text/javascript">
-		/*Exemplos de selecter usando jQuery --> Olhar os arquivos CSS tambem para as transicoes*/
-
-		$(document).ready(function() {
-
-			// $("#banner h1").on("mouseover", function () {
-			// 	$("#banner h1").css({"color":"red", "font-size": "10em", "transition": "1s"});
-			// });
-
-			// $("#banner h1").on("mouseout", function () {
-			// 	$("#banner h1").css({"color":"#fff", "font-size": "92px", "transition": "1s"});
-			// });
-
-			$("#banner h1").on("mouseover", function () {
-				$("#banner h1").addClass("efeito");
-
-			}).on("mouseout", function () {
-				$("#banner h1").removeClass("efeito");
-			});
-
-			$("#input-search").on("focus", function () {
-				$("li.search").addClass("ativo");
-
-			}).on("blur", function () {
-				$("li.search").removeClass("ativo");
-			});
-
-			$(".thumbnails").owlCarousel({
-				loop: true,
-				margin: 10,
-				// nav: true,
-				// navText: ["Anterior", "Proximo"],
-				responsiveClass:true,
-				responsive: {
-					0: {
-						items: 1
-					},
-					480: {
-						items: 2
-					},
-					768: {
-						items: 4	
-					}
-				},
-			    autoplay: true,
-			    autoplayTimeout: 4000,
-			    autoplayHoverPause: true
-			});
-
-		});	// 
-	</script>
-
 </body>
 </html>
