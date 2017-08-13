@@ -10,12 +10,21 @@
 	font-size: 1em;
 }
 
+* 4
+	box-sizing: border-box;
+}
+
+html, body {
+	width: 100%;
+	margin: 0;
+	overflow-x: hidden;
+}
 
 header {
 	width: 100%;
 	height: 150px;
 	background: rgba(94, 41, 154, .8);
-	z-index: 2;
+	z-index: 4;
 	position: relative;
 }
 
@@ -28,6 +37,7 @@ header .header-black {
 	height: 40px;
 	background-color: #000;
 	padding-top: 1px;
+	z-index: 5;
 }
 
 header .header-black li {
@@ -113,26 +123,22 @@ header .header-black li.club-17 {
 }
 
 header .header-black li.club-18 {
-	background-position: -48px 0px;
-}
-
-header .header-black li.club-19 {
 	background-position: -808px 0px;
 }
 
-header .header-black li.club-20 {
+header .header-black li.club-19 {
 	background-position: -854px 0px;
 }
 
-header .header-black li.club-21 {
+header .header-black li.club-20 {
 	background-position: -901px 0px;
 }
 
-header .header-black li.club-22 {
+header .header-black li.club-21 {
 	background-position: -949px 0px;
 }
 
-header .header-black li.club-23 {
+header .header-black li.club-22 {
 	background-position: -998px 0px;
 }
 
@@ -152,7 +158,7 @@ header #logotipo {
 	position: absolute;
 	top: 20px;
 	right: 1105px;
-	z-index: 6;
+	z-index: 7;
 }
 
 #menu {
@@ -169,13 +175,13 @@ header #logotipo {
 }
 
 #menu li.search {
-	width: 200px;
-	transition-duration: 1s;
-	transition-timing-function: cubic-bezier(1,-.91,.51,.9);  /* Controla a velocidade da transicao --> testar os valores*/
+	width: 100px;
+	transition-duration: .2s;
+	transition-timing-function: ease-in;  /* Controla a velocidade da transicao --> testar os valores*/
 }
 
 #menu li.search.ativo {
-	width: 300px;	
+	width: 400px;	
 }
 
 #menu li.search input {
@@ -185,12 +191,11 @@ header #logotipo {
 	border-radius: 8px;
 	padding: 8px;
 	transition-duration: .1s;
-	transition-timing-function: cubic-bezier(1,.41,2.51,.9);  /* Controla a velocidade da transicao --> testar os valores*/ 
+	transition-timing-function: cubic-bezier(.82,.15,.42,1.49);  /* Controla a velocidade da transicao --> testar os valores*/ 
 }
 
 #menu li.search.ativo input {
-	padding: 10px;
-	width: 335px;
+	width: 400px;
 }
 
 #menu li.search button {
@@ -346,6 +351,7 @@ header #logotipo {
 	border:5px solid #FDE192;
 	width: 200px;
 	margin: 0 auto; 
+    margin-bottom: 20px;
 }
 
 #call-to-action p {
@@ -395,10 +401,11 @@ footer {
 
 footer .row {
 	width: 100%;
+
 }
 
 footer .row-cinza-claro {
-	height: 200px;
+	height: 240px;
 	background-color: #171F26;
 }
 
@@ -471,58 +478,96 @@ footer .col-get-in-touch i.fa {
 	margin-right: 10px;
 }
 
-
-
-footer .col-get-in-touch p {
-	margin-bottom: 0;
-	line-height: 10px;
-}
+/***********************************************/
+/**************** REDES SOCIAIS ****************/
+/***********************************************/
 
 footer .col-get-in-touch address {
-	color: #666;
+	color:#666;
 	font-family: Arial;
 	font-size: 14px;
+	margin-bottom: 6px;
 }
 
+footer .col-get-in-touch address span {
+	display: inline-block;
+}
+
+footer .col-get-in-touch address i {
+	position: relative;
+	top: -14px;
+}
 footer .col-get-in-touch i {
 	color: #9B9B9B;
-	font-family: Arial;
-	font-size: 14px;
+	font-size: 20px;
+	margin: 0 6px;
+
 }
 
 footer .col-get-in-touch a {
 	color: #666;
 }
 
+footer .col-get-in-touch p {
+	line-height: 20px;
+}
+
 footer .list-socials {
-	margin-top: 1px;
+	margin-top: 30px;
+}
+
+footer .list-socials li {
+	display: inline-block;
+	margin-right: 10px;
 }
 
 footer .list-socials a {
-	width: 28px;
-	height: 28px;
 	display: block;
-	border: 1px solid #9B9B9B; 
-	line-height: 26px;
+	border: #9B9B9B 1px solid;
+	width: 30px;
+	height: 30px;
+	line-height: 40px;
 	border-radius: 14px;
 	text-align: center;
-	margin: 15px; 
-}
-
-footer .col-get-in-touch .list-socials li {
-	display: inline-block !important;
-	margin-right: -8px;
-	margin-left: -12px;
-	padding: 0; 
 }
 
 footer .list-socials i {
-	font-family: Arial;
-	color: #9B9B9B;
-	font-size: 20px;
-	margin: 0px auto !important;
-
+	font-size: 16px;
+	margin: 7px 8px;
 }
 
-footer .list-socials.fa-facebook:before {
-  content: "\f09a";
+ol, ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+i.fa {
+    margin-right: 10px;
+    position: relative;
+    top: -5px;
+}
+
+i.fa-instagram, .fa-chevron-up {
+	right: 1px;
+}
+
+/***********************************************/
+/************* FIM REDES SOCIAIS ***************/
+/***********************************************/
+
+video {
+	width: 60%;
+	margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+#call-to-action h2.video {
+	margin-top: 100px;
+}
+
+/*Responsive buttons*/
+#btn-bars, #btn-search, #btn-news-prev, #btn-news-next {
+	display: none;
+}
+

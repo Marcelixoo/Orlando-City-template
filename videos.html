@@ -2,12 +2,15 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Define parametros de responsividade -->
 	<title>Orlando City</title>
 	<link rel="stylesheet" type="text/css" href="libraries/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="libraries/owl.carousel2/dist/assets/owl.carousel.min.css">
 	<link rel="stylesheet" type="text/css" href="libraries/owl.carousel2/dist/assets/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css" href="libraries/plyr/dist/plyr.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"  integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/orlando.css">
+	<link rel="stylesheet" type="text/css" href="css/orlando-mobile.css">
 	<script src="https://use.fontawesome.com/4378d1515d.js"></script>
 	<script type="text/javascript" src="libraries/jquery/jquery.min.js"></script>
 </head>
@@ -77,27 +80,94 @@
 	<!-- Sessao com a imagem de fundo -->
 	<section>
 
-		<!-- Area de propaganda para compra de ingressos e registro do usuario -->
-		<div class="container">
-				<!-- Inicio area de propaganda  -->
-				<div id="call-to-action">
-					
-					<div class="row text-center">
-						<h2>Videos</h2>
-						<hr>
+		<!-- Inicio area de videos  -->
+		<div id="call-to-action">
+			<!-- Area de propaganda para compra de ingressos e registro do usuario -->
+			<div class="container">
+
+				<div class="row text-center">
+					<div class="player">
+						<video crossorigin src="mp4/Orlando_City_Foundation_2015.mp4" controls poster="images/Orlando_City_Foundation_2015.jpg">
+							<track kind="captions" label="Portugu&ecirc;s (Brasil)" src="legendas/legendas.vtt" srclang="pt-br" default>
+						</video>
+					</div>
+				</div>
+			
+			</div>
+
+			
+			<div class="container">
+
+				<div class="row text-center">
+					<h2 class="video">Latest videos</h2>
+					<hr>
+				</div>
+
+				<div class="row thumbnails owl-carousel owl-theme">
+				
+					<div class="item" data-video="highlights">
+						<div class="item-inner">
+							<img src="images/highlights.jpg" alt="Video Highlights">
+							<h3>Orlando City Acquires goalkeeper Joe Bendik from Toronto FC</h3>
+						</div>
 					</div>
 
-					<div class="row">
-						
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, numquam. Aliquid voluptatibus sapiente dolore, numquam voluptates, asperiores beatae fuga, alias doloremque nihil sint. Odit a adipisci illo aspernatur maiores rem! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam iure pariatur cum possimus harum, expedita blanditiis aliquid velit ipsa. Eos sapiente, sit ratione perspiciatis. Velit harum, quo ipsum iusto sint.		
-						</p>
-
+					<div class="item" data-video="Orlando_City_Foundation_2015">
+						<div class="item-inner">
+							<img src="images/Orlando_City_Foundation_2015.jpg" alt="Video Orlando_City_Foundation_2015">
+							<h3>Orlando City Acquires goalkeeper Joe Bendik from Toronto FC</h3>
+						</div>
+					</div>
+				
+					<div class="item" data-video="highlights">
+						<div class="item-inner">
+							<img src="images/highlights.jpg" alt="Video Highlights">
+							<h3>Orlando City Acquires goalkeeper Joe Bendik from Toronto FC</h3>
+						</div>
 					</div>
 
-				</div> 
-				<!-- Fim da area de propaganda  -->
-			</div> 
-			<!-- Fim do container da area de propaganda  -->
+					<div class="item" data-video="Orlando_City_Foundation_2015">
+						<div class="item-inner">
+							<img src="images/Orlando_City_Foundation_2015.jpg" alt="Video Orlando_City_Foundation_2015">
+							<h3>Orlando City Acquires goalkeeper Joe Bendik from Toronto FC</h3>
+						</div>
+					</div>
+
+					<div class="item" data-video="highlights">
+						<div class="item-inner">
+							<img src="images/highlights.jpg" alt="Video Highlights">
+							<h3>Orlando City Acquires goalkeeper Joe Bendik from Toronto FC</h3>
+						</div>
+					</div>
+
+					<div class="item" data-video="Orlando_City_Foundation_2015">
+						<div class="item-inner">
+							<img src="images/Orlando_City_Foundation_2015.jpg" alt="Video Orlando_City_Foundation_2015">
+							<h3>Orlando City Acquires goalkeeper Joe Bendik from Toronto FC</h3>
+						</div>
+					</div>
+
+					<div class="item" data-video="highlights">
+						<div class="item-inner">
+							<img src="images/highlights.jpg" alt="Video Highlights">
+							<h3>Orlando City Acquires goalkeeper Joe Bendik from Toronto FC</h3>
+						</div>
+					</div>
+
+					<div class="item" data-video="Orlando_City_Foundation_2015">
+						<div class="item-inner">
+							<img src="images/Orlando_City_Foundation_2015.jpg" alt="Video Orlando_City_Foundation_2015">
+							<h3>Orlando City Acquires goalkeeper Joe Bendik from Toronto FC</h3>
+						</div>
+					</div>
+
+				</div> <!-- Thumbnails section about videos --> 
+	
+			</div>	<!-- Fim do container de videos -->
+		
+		</div> <!-- Fim da area de videos  -->
+	
+		
 	</section>
 	<!-- Fim da sessao do site -->
 
@@ -184,34 +254,36 @@
 	<script type="text/javascript" src="libraries/jquery/jquery.min.js"></script>
 	<script type="text/javascript" src="libraries/owl.carousel2/dist/owl.carousel.min.js"></script>
 	<script type="text/javascript" src="libraries/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="https://cdn.plyr.io/2.0.13/plyr.js"></script>
+	<script type="text/javascript" src="libraries/plyr/dist/plyr.js"></script>
+	<script type="text/javascript" src="js/efeitos.js"></script>
 	<script type="text/javascript">
-		/*Exemplos de selecter usando jQuery --> Olhar os arquivos CSS tambem para as transicoes*/
+		/*Exemplo de selecter usando jQuery  para ativar um atributo data-* --*/
 
-		$(document).ready(function() {
-
-			// $("#banner h1").on("mouseover", function () {
-			// 	$("#banner h1").css({"color":"red", "font-size": "10em", "transition": "1s"});
-			// });
-
-			// $("#banner h1").on("mouseout", function () {
-			// 	$("#banner h1").css({"color":"#fff", "font-size": "92px", "transition": "1s"});
-			// });
-
-			$("#banner h1").on("mouseover", function () {
-				$("#banner h1").addClass("efeito");
-
-			}).on("mouseout", function () {
-				$("#banner h1").removeClass("efeito");
+		/*Abreviaçao pro document.onload*/
+		$(function() {
+			$(".thumbnails .item").on("click", function() {
+				$("video").attr({
+					"src": "mp4/" + $(this).data("video") + ".mp4",
+					"poster": "images/" + $(this).data("video") + ".jpg"
+				}); //Pega o objeto atual 'this' --> ativa um novo valor de src para o caminho data-video!
 			});
+		
+			(function(d, p){
+			    var a = new XMLHttpRequest(),
+			        b = d.body;
+			    a.open("GET", p, true);
+			    a.send();
+			    a.onload = function(){
+			        var c = d.createElement("div");
+			        c.style.display = "none";
+			        c.innerHTML = a.responseText;
+			        b.insertBefore(c, b.childNodes[0]);
+			    }
+			})(document, "libraries/plyr/dist/plyr.svg");
 
-			$("#input-search").on("focus", function () {
-				$("li.search").addClass("ativo");
-
-			}).on("blur", function () {
-				$("li.search").removeClass("ativo");
-			});
-
-		});	// 
+			plyr.setup();
+		}); 
 	</script>
 
 </body>
